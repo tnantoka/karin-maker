@@ -3,16 +3,86 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>カリンメーカー</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <canvas></canvas>
 
-  <img class="output">
+<div class="text-center">
+  <h1 class="display-5 mt-5">カリンメーカー</h1>
 
-  <script src="https://cdn.jsdelivr.net/npm/gif.js@0.2.0/dist/gif.min.js"></script>
-  <script src="script.js"></script>
+  <form class="conatiner mt-5">
+    <div class="row">
+      <div class="col-5 col-sm-3 offset-1 offset-sm-3">
+        <input class="form-control border-dark pokemon" value="ポケモン">
+      </div>
+      <div class="col-5 col-sm-3">
+        <input class="form-control border-dark trainer" value="トレーナー">
+      </div>
+    </div>
+
+    <div class="row mt-3">
+      <div class="col-5 col-sm-3 offset-1 offset-sm-3">
+        <input class="form-control border-dark strong" value="つよい">
+      </div>
+      <div class="col-5 col-sm-3">
+        <input class="form-control border-dark weak" value="よわい">
+      </div>
+    </div>
+
+    <div class="row mt-3">
+      <div class="col-5 col-sm-3 offset-1 offset-sm-3">
+        <input class="form-control border-dark win" value="かてる">
+      </div>
+      <div class="col-5 col-sm-3">
+        <input class="form-control border-dark fight" value="がんばる">
+      </div>
+    </div>
+  </form>
+
+  <div class="text-center mt-5">
+    <canvas class="preview"></canvas>
+  </div>
+
+  <div class="text-center mt-4">
+    <div class="row mt-3">
+      <div class="col-10 col-sm-6 offset-1 offset-sm-3">
+        <button class="btn btn-dark btn-lg w-100 download">ダウンロード</button>
+      </div>
+    </div>
+    <img class="output">
+  </div>
+</div>
+
+<ul class="list-unstyled text-center mt-4">
+  <li><a href="#">ニンテンドープリペイド番号 1000円|オンラインコード版</a></li>
+  <li><a href="#">ニンテンドープリペイド番号 500円|オンラインコード版</a></li>
+</ul>
+
+<div class="text-center mt-4">
+  <a href="https://www.nintendo.co.jp/3ds/pokemon_goldsilver_dlcard/index.html">3DS VCのポケモン金銀のDL版</a>購入は<a href="https://www.nintendo.co.jp/support/information/2022/0216.html">2023年3月28日 9時</a>まで<br>
+  （1,222円）
+</div>
+
+<div class="text-center mt-5">
+  <a href="https://twitter.com/tnantoka">@tnantoka</a>
+<div>
+
+<script src="https://cdn.jsdelivr.net/npm/gif.js@0.2.0/dist/gif.min.js"></script>
+<script src="generator.js"></script>
+<script src="script.js"></script>
+
 </body>
 
 </html>
