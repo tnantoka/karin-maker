@@ -2,7 +2,7 @@
 
 https://karin-maker.tnantoka.com/
 
-![](/karin-maker.gif)
+![](/docs/karin-maker.gif)
 
 ## Acknowledgements
 

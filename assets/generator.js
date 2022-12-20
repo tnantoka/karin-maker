@@ -68,7 +68,7 @@ class Generator {
     this.gif = new GIF({
       width: this.canvas.width,
       height: this.canvas.height,
-      workerScript: 'gif.worker.js',
+      workerScript: 'assets/gif.worker.js',
     });
 
     this.gif.on('finished', (blob) => {

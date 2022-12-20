@@ -56,9 +56,9 @@ const init = async () => {
   await loadFont();
 
   images = {
-    frame: await loadImage('frame.png'),
-    arrow: await loadImage('arrow.png'),
-    line: await loadImage('line.png'),
+    frame: await loadImage('assets/frame.png'),
+    arrow: await loadImage('assets/arrow.png'),
+    line: await loadImage('assets/line.png'),
   }
 
   preview.width = images.frame.width * 0.5;
