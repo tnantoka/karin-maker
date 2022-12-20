@@ -81,9 +81,8 @@ class Generator {
   }
 
   async addGifFrame(delay) {
-    await sleep(delay);
-
     if (!this.download) {
+      await sleep(delay);
       return;
     }
 
