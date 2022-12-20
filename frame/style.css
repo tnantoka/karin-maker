@@ -1,0 +1,31 @@
+@font-face {
+  font-family: "myFont";
+  src: url("pkmnfont/pkmn_s2.woff") format('woff');
+}
+
+body {
+  font-family: 'myFont';
+  background: gray;
+}
+
+.container {
+  margin: 1rem;
+  overflow: hidden;
+  width: 394px;
+  height: 108px;
+  background: white;
+}
+
+.frame {
+  white-space: pre;
+  line-height: 1;
+  margin-top: -18px;
+  margin-left: -2px;
+}
+
+.char {
+  width: 16px;
+  height: 16px;
+  margin-bottom: 10px;
+  background: white;
+}
